@@ -1,0 +1,25 @@
+/* este es el estilo de mi página de recetas */
+body {background-image:url("imagenes/fondo.jpg");
+      background-size:200px 200px;}
+#wrapper {width:80%;
+          height:600px; /* luego lo quito */
+          background-color:white;
+          margin:auto;
+          padding:1vw;
+          border:1px solid black;
+            overflow: auto;}
+          ul {list-style-image:url("imagenes/cuchillo.png")}
+h1 {text-align:center;
+    color:rgb(231, 93, 50);}
+    table {border:2px solid rgb(59, 18, 173);
+            border-collapse: collapse;}
+    td, th {border:1px solid rgb(70, 67, 238);
+            padding:10px}
+      td {text-align: center;}
+
+/* vamos a utilizar un recurso llamado media query
+se trata de incluir una especie de "if" y una condicion 
+para que cambie algo en el estilo cuando tengo una pantalla pequeña */
+@media only screen (max-width:500px){
+      #wrapper {width:100%}
+}
