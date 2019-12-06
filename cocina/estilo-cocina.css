@@ -1,9 +1,10 @@
 /* este es el estilo de mi página de recetas */
-body {background-image:url("imagenes/fondo.jpg");
-      background-size:200px 200px;}
+body {background-image:url("imagenes/receta.jpg");
+      background-size:200px 200px;
+      background-color: coral;}
 #wrapper {width:80%;
           height:600px; /* luego lo quito */
-          background-color:white;
+          background-color:rgb(250, 208, 152);
           margin:auto;
           padding:1vw;
           border:1px solid black;
@@ -11,11 +12,21 @@ body {background-image:url("imagenes/fondo.jpg");
           ul {list-style-image:url("imagenes/cuchillo.png")}
 h1 {text-align:center;
     color:rgb(231, 93, 50);}
-    table {border:2px solid rgb(59, 18, 173);
+table {border:2px solid rgb(245, 173, 40);
             border-collapse: collapse;}
-    td, th {border:1px solid rgb(70, 67, 238);
+td, th {border:1px solid rgb(247, 162, 65);
             padding:10px}
-      td {text-align: center;}
+td {text-align: center;}
+h2 {font-family: 'Acme', sans-serif;
+      text-align: center;
+      color:rgb(231, 93, 50);
+      border: 2px solid darkorange;
+      border-collapse: collapse;
+      border-radius:50px 50px 50px 50px ;
+      padding:0px 5px 1px 5px;
+      width:auto;}
+li {font-size:20px;
+      font-family: 'Archivo Narrow', sans-serif;}
 
 /* vamos a utilizar un recurso llamado media query
 se trata de incluir una especie de "if" y una condicion 

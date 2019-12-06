@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Poema de otoño 2</title>
+    <link href="imagenes/favicon.ico" rel="icon">
+    <!-- la siguiente hoja de estilo sólo se ve bien si tenemos una pantalla apaisada,
+         una pantalla de PC, porque el diseño y la distribución están basados en 
+         una imagen rectangular de fondo de escritorio de PC 
+         la próxima semana veremos como hacerla responsive para teléfono y táblet -->
+    <style>
+       body { font-family: 'Playball', cursive;}
+       #wrapper {background-image: url("imagenes/otono.jpg");
+                 background-repeat: no-repeat;
+            /* si usamos size cover, la imagen se estira */
+                 background-size:cover;
+            /* 100vw indica el ancho total */
+                 width:96vw;
+            /* 100vh indica el alto total */
+                 height:93vh;
+                 padding:3vh;
+                 overflow: auto;}
+       #poema {width:40%;
+               font-family: 'Source Sans Pro', sans-serif;
+               background-color:rgba(253, 251, 148, 0.5);
+               text-align:center;
+            /* el siguiente margin, centra el bloque completo del poema */
+               margin: 10px auto;
+            /* el padding aumenta/disminuye en función del alto disponible de pantalla */
+               padding:2vh;
+               font-size:3vh;}
+    
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+      <div id="poema">
+          <h1>Un día de otoño</h1>
+
+          <p>Señor: es hora.<br> 
+          Largo fue el verano.<br>
+          Pon tu sombra en los relojes solares,<br>
+          y suelta los vientos por las llanuras.</p>
+          
+          <p>Haz que sazonen los últimos frutos;<br>
+          concédeles dos días más del sur,<br>
+          úrgeles a su madurez y mete<br>
+          en el vino espeso el postrer dulzor.</p>
+          
+          <p>No hará casa el que ahora no la tiene,<br>
+          el que ahora está solo lo estará siempre,<br>
+          velará, leerá, escribirá largas cartas,<br>
+          y deambulará por las avenidas,<br>
+          inquieto como el rodar de las hojas.</p>
+          
+          <h2>Rainer M. Rilke</h2>
+      </div>
+    </div>  
+</body>
+</html>

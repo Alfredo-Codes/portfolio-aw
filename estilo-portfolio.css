@@ -1,8 +1,14 @@
 /*este es el estilo de portfoloio de Alfredo */
 body {background-color:black;}
+h2 {text-align: center;
+        font-family: 'Poppins', sans-serif;}
+p1 {font-family: 'Poppins', sans-serif;
+        border: 2px solid rgb(49, 128, 231);
+        border-collapse: collapse;
+        border-radius:5px 5px 5px 5px ;}
 #wrapper {width:85%;
           height:600px; /* luego lo borro */
-          background-color: white;
+          background-color: rgb(168, 167, 167);
           margin:auto;
           overflow: auto;}
 header {position:relative;

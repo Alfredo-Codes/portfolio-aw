@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Halloween Alfredo Codes</title>
+    <link href="https://fonts.googleapis.com/css?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="imagenes/favicon.ico" rel="icon">
+    <style>
+        body {background-color: rgb(41, 42, 46);}
+        #wrapper {position: relative;
+                  background-image:url("imagenes/fondaco.jpg");
+                  width:1280px;
+                  height:720px;
+                  margin:auto;
+                  box-shadow: rgb(90, 92, 104) 15px 15px 15px,
+                              rgb(90, 92, 104) -15px -15px 15px,
+                              rgb(90, 92, 104) 15px -15px 15px,
+                              rgb(90, 92, 104) -15px 15px 15px;}
+        h1  {position: absolute;
+            font-family: 'Nosifer', cursive;
+            color:chocolate;
+            left:325px
+            }
+        #p1 {position: absolute;
+            top:270px;
+            left:10px;
+            font-size:200%;
+            color:rgb(255, 113, 11)}
+        #p2 {position:absolute;
+            left:475px;
+            top:100px;
+            font-size:200%;
+            color:rgb(255, 113, 11)}
+        #scare{position:absolute;
+               top:350px;
+               left:100px;
+               width:160px;
+               height:300px;
+               /*border:1px solid darkorange*/;}
+        #raven{position:absolute;
+               left:570px;
+               top:175px;
+               width:110px;
+               height:75px;
+               /*border:1px solid darkorange*/;}
+        #susto {position:absolute;
+                left:660px;
+                top:410px;
+                visibility:hidden;}
+        #bruja {position:absolute;
+                left:180px;
+                top:170px;
+                visibility:hidden;}
+    </style>
+    <script>
+            function mostrar(id){
+                document.getElementById(id).style.visibility="visible";
+            }
+            function ocultar(id){
+                document.getElementById(id).style.visibility="hidden";
+            }
+            function sonar(id){
+           document.getElementById(id).play();
+            }
+            function parar(id){
+           document.getElementById(id).pause();
+            }
+    </script>
+</head>
+<body>
+    <audio id="zombie">
+        <source src="sonidos/Zombie_Horde-Mike_Koenig-1926300541.mp3" type="audio/mpeg"></audio>
+    <audio id="risa">
+        <source src="sonidos/bruja.mp3" type="audio/mpeg">
+    </audio>
+    <div id="wrapper">
+        <h1>Scary Halloween Party</h1>
+        <p id="p1">Don't disturb the scarecrow!!!...</p>
+        <p id="p2">Don't disturb the raven!!!...</p>
+        <div id="scare" onclick="mostrar('susto');sonar('zombie')"
+                        onclick="ocultar('susto');parar('zombie')"></div>
+        <div id="raven" onclick="mostrar('bruja');sonar('risa')"
+                        onclick="ocultar('bruja');parar('risa')"></div>
+        <img id="susto" src="imagenes/susto.gif" height="300" width="320">
+        <img id="bruja" src="imagenes/bruja.gif" height="100" width="200">
+    </div>  
+</body>
+</html>
